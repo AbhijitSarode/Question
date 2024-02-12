@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 1px solid red;
+    font-size: 1.5rem;
+    animation: fade ease-in 1s;
+    animation-timeline: view();
+}
+
+h1,
+h3 {
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    text-align: center;
+    height: 100vh;
+    padding-top: 40vh;
+}
+
+button {
+    display: block;
+    margin: 45vh auto;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+@keyframes fade {
+    0% {
+        color: white;
+    }
+
+    45% {
+        color: white;
+    }
+
+    50% {
+        color: black;
+    }
+
+
+    100% {
+        color: white;
+    }
+}
