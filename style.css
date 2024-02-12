@@ -2,14 +2,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     font-size: 1.5rem;
-    animation: fade ease-in 1s;
+    animation: fade ease-in 1s both;
     animation-timeline: view();
 }
 
 h1,
-h3 {
+h3,
+math {
     height: 100vh;
     text-align: center;
     display: flex;
@@ -23,11 +24,54 @@ p {
     padding-top: 40vh;
 }
 
-button {
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+}
+
+#magic {
     display: block;
+    background-color: white;
     margin: 45vh auto;
     font-size: 1.5rem;
+}
+
+.ans {
+    width: 7rem;
+    /* margin: 45vh auto; */
+    font-size: 1.5rem;
+}
+
+.yes {
+    background-color: lightgreen;
+    font-size: 1.5rem;
+}
+
+.no {
+    background-color: red;
+    font-size: 1.5rem;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+button {
     cursor: pointer;
+    border: none;
+}
+
+.text-div {
+    text-align: center;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
 @keyframes fade {
@@ -35,16 +79,93 @@ button {
         color: white;
     }
 
-    45% {
+    40% {
         color: white;
     }
+
+
 
     50% {
         color: black;
     }
 
 
+
+    70% {
+        color: white;
+    }
+
     100% {
         color: white;
     }
+}
+
+.spinner {
+    width: 10rem;
+    height: 10rem;
+    margin: auto 45%;
+    border: 16px solid #f3f3f3;
+    border-top: 16px solid #3498db;
+    border-radius: 50%;
+    animation: spin 2s linear infinite;
+
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+
+}
+
+
+.heart {
+    display: block;
+    width: 700px;
+    margin: 2rem auto;
+}
+
+.logo {
+    stroke: red;
+    stroke-width: 20;
+    stroke-linecap: round;
+    stroke-dasharray: 1500;
+    stroke-dashoffset: 1500;
+    fill: none;
+}
+
+.s_shape {
+    animation: logo 4s ease-out forwards;
+}
+
+.line_1 {
+    animation: logo 1.3s linear forwards;
+    animation-delay: .2s;
+}
+
+.line_2 {
+    animation: logo 1.3s linear forwards;
+    animation-delay: .5s;
+}
+
+
+@keyframes logo {
+    0% {
+        stroke-dashoffset: 1500;
+    }
+
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
 }
