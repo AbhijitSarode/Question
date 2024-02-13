@@ -58,13 +58,13 @@ yesBtn.addEventListener("click", function () {
       txt.innerText = "Seriously?? In first attempt??? SMH";
       break;
     case 2:
-      txt.innerText = "Was is so hard??";
+      txt.innerText = "Was it is so hard??";
       break;
     case 3:
       txt.innerText = "That was fun. Thanks for being my valentine 😘";
       break;
     case 4:
-      txt.innerText = "What is fuck is your problem??"
+      txt.innerText = "What the fuck is your problem??"
       break
     case 5:
       txt.innerHTML = "You thought you could say no to me??"
